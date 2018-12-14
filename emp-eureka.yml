@@ -1,12 +1,12 @@
 spring:
   profiles:
     active: dev
-    ------
+---
 server: 
   port: 8092
 spring:
- profile: dev
- application:
+  profile: dev
+  application:
     name: emp-eureka  
 eureka:
   client:
@@ -14,12 +14,12 @@ eureka:
     fetch-registry: false #不从注册中心获取服务
     service-url:
       defaultZone: http://127.0.0.1:8092/eureka/ #设置和注册中心交互的地址
- ------ 
+---
 server: 
   port: 8092
 spring:
- profile: test
- application:
+  profile: test
+  application:
     name: emp-eureka  
 eureka:
   client:
